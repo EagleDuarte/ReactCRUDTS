@@ -1,3 +1,5 @@
+import "./note-table.css";
+
 import React from "react";
 
 const NoteTable = (props: any) => {

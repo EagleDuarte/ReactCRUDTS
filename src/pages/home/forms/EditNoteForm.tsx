@@ -1,3 +1,5 @@
+import "./form-style.css";
+
 import React, { useEffect, useState } from "react";
 import { Note } from "../../../data/Interfaces";
 
