@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Note } from "../../../shared/interfaces/Interfaces";
+import { Note } from "../../../data/Interfaces";
 
 const AddNoteForm = (props: any) => {
   const model = { id: 0, title: "", description: "" } as Note;

@@ -1,7 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Container, Button, Paper, TextField } from "@mui/material";
-import { Card, paperStyled } from "../../shared/styles/Styles";
-import { LoggedUser, User } from "../../shared/interfaces/Interfaces";
+import { useState } from "react";
+
+import "./login.css";
+
+import { useNavigate } from "react-router-dom";
+import { LoggedUser, User } from "../../data/Interfaces";
+import { Button, TextField } from "@mui/material";
 
 function Login() {
   const userList = JSON.parse(
@@ -57,25 +60,38 @@ function Login() {
   };
 
   return (
-    <>
-      <Container sx={Card}>
-        <Paper elevation={4} sx={paperStyled}>
-          <header>
-            <h2>Pagina de Login</h2>
-          </header>
-          <form onSubmit={onSubmit}>
-            <TextField name="email" type="text" label="E-mail" />
-            <TextField name="password" type="password" label="Senha" />
-            <Button type="submit">Entrar</Button>
-            <footer>
-              <p>
-                Não possui uma conta? <Link to={"/Cadastro"}>Crie uma.</Link>
-              </p>
-            </footer>
+    <div className="container">
+      <div className="container-login">
+        <div className="wrap-login">
+          <form className="login-form" onSubmit={onSubmit}>
+            <span className="login-form-title">Welcome to your NoteList! </span>
+
+            <TextField
+              name="email"
+              type="text"
+              placeholder="Digite seu e-mail"
+              className="wrap-input"
+            />
+            <TextField
+              name="password"
+              type="password"
+              placeholder="Digite sua senha"
+              className="wrap-input"
+            />
+            <Button type="submit" className="login-form-btn">
+              Login
+            </Button>
           </form>
-        </Paper>
-      </Container>
-    </>
+
+          <div className="text-center">
+            <span className="txt1">Não possui conta? </span>
+            <a className="txt2" href="/Register">
+              Criar conta
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Note } from "../../../shared/interfaces/Interfaces";
+import { Note } from "../../../data/Interfaces";
 
 const EditNoteForm = (props: any) => {
   const [user, setUser] = useState(props.currentUser);

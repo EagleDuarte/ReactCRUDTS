@@ -1,8 +1,10 @@
+import "./home.css";
+
 import React, { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 
-import { Note, User, UserData } from "../../shared/interfaces/Interfaces";
+import { Note, User, UserData } from "../../data/Interfaces";
 import EditNoteForm from "./forms/EditNoteForm";
 import AddNoteForm from "./forms/AddNoteForm";
 import NoteTable from "./tables/NoteTable";

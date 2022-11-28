@@ -1,13 +1,12 @@
-import { CssBaseline } from '@mui/material'
-import Router from './routes/Routes'
+import React from "react";
+import Router from "./routes/Routes";
 
 function App() {
-	return (
-		<>
-			<CssBaseline />
-			<Router />
-		</>
-	)
+  return (
+    <React.StrictMode>
+      <Router />
+    </React.StrictMode>
+  );
 }
 
-export default App
+export default App;
