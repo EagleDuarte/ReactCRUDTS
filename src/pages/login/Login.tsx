@@ -78,9 +78,9 @@ function Login() {
               placeholder="Digite sua senha"
               className="wrap-input"
             />
-            <Button type="submit" className="login-form-btn">
+            <button type="submit" className="login-form-btn">
               Login
-            </Button>
+            </button>
           </form>
 
           <div className="text-center">

@@ -22,15 +22,17 @@ const AddNoteForm = (props: any) => {
         setNote(note);
       }}
     >
-      <label>Titulo</label>
+      <label>Descrição</label>
       <input
+        className="wrap-input"
         type="text"
         name="title"
         value={note.title}
         onChange={handleInputChange}
       />
-      <label>Descrição</label>
+      <label>Detalhamento</label>
       <input
+        className="wrap-input"
         type="text"
         name="description"
         value={note.description}

@@ -125,6 +125,12 @@ button.style{
     box-shadow: inset 200px 0 0 #00000055;
 }
 
-.TextField{
-    background-color: white;
+.modal-field{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    padding: 0 10px;
+    font-size:1rem;
 }

@@ -33,15 +33,17 @@ const EditNoteForm = (props: any) => {
         }}
       >
         <table>
-          <label>Detalhamento</label>
+          <label>Descrição</label>
           <input
+            className="wrap-input"
             type="text"
             name="title"
             value={note.title}
             onChange={handleInputChange}
           />
-          <label>Descrição</label>
+          <label>Detalhamento</label>
           <input
+            className="wrap-input"
             type="text"
             name="description"
             value={note.description}

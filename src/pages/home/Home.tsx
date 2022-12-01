@@ -93,7 +93,7 @@ const App = () => {
   return (
     <div className="text-center">
       <header>
-        <h1>Bem vindo a lista de usuários</h1>
+        <h1>CRUD Application</h1>
       </header>
       <main>
         <div className="container">

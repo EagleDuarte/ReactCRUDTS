@@ -7,9 +7,9 @@ const NoteTable = (props: any) => {
     <table>
       <thead>
         <tr>
-          <td>Detalhamento</td>
           <td>Descrição</td>
-          <td>Ações</td>
+          <td>Detalhamento</td>
+          <td>Opções</td>
         </tr>
       </thead>
       <tbody>
