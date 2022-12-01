@@ -33,7 +33,7 @@ const EditNoteForm = (props: any) => {
         }}
       >
         <table>
-          <label>Descrição</label>
+          <label>Description</label>
           <input
             className="wrap-input"
             type="text"
@@ -41,7 +41,7 @@ const EditNoteForm = (props: any) => {
             value={note.title}
             onChange={handleInputChange}
           />
-          <label>Detalhamento</label>
+          <label>Details</label>
           <input
             className="wrap-input"
             type="text"
@@ -55,7 +55,7 @@ const EditNoteForm = (props: any) => {
           className="button style"
           onClick={() => props.setEditing(false)}
         >
-          Cancelar
+          Cancel
         </button>
       </form>
     </main>

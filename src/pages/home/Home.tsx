@@ -120,15 +120,15 @@ const App = () => {
               notes={getUser.notes}
               editNote={editNote}
             />
-            <Button
+            <button
               className="button style"
               onClick={() => {
                 localStorage.removeItem("loggedUser");
                 navigate("/");
               }}
             >
-              Sair
-            </Button>
+              Exit
+            </button>
           </div>
         </div>
       </main>

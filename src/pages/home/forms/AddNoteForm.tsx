@@ -22,7 +22,7 @@ const AddNoteForm = (props: any) => {
         setNote(note);
       }}
     >
-      <label>Descrição</label>
+      <label>Description</label>
       <input
         className="wrap-input"
         type="text"
@@ -30,7 +30,7 @@ const AddNoteForm = (props: any) => {
         value={note.title}
         onChange={handleInputChange}
       />
-      <label>Detalhamento</label>
+      <label>Details</label>
       <input
         className="wrap-input"
         type="text"
@@ -38,7 +38,7 @@ const AddNoteForm = (props: any) => {
         value={note.description}
         onChange={handleInputChange}
       />
-      <button className="button style">Adicionar</button>
+      <button className="button style">Add Note</button>
     </form>
   );
 };

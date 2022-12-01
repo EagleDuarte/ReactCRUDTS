@@ -7,9 +7,8 @@ const NoteTable = (props: any) => {
     <table>
       <thead>
         <tr>
-          <td>Descrição</td>
-          <td>Detalhamento</td>
-          <td>Opções</td>
+          <th>Description------</th>
+          <th>Details------</th>
         </tr>
       </thead>
       <tbody>
@@ -23,22 +22,22 @@ const NoteTable = (props: any) => {
                   onClick={() => {
                     props.setEditing(note.id);
                   }}
-                  className="button muted-button"
+                  className="button style"
                 >
-                  Editar
+                  Edit
                 </button>
                 <button
                   onClick={() => props.deleteNote(note.id)}
-                  className="button muted-button"
+                  className="button style"
                 >
-                  Deletar
+                  Delete
                 </button>
               </td>
             </tr>
           ))
         ) : (
           <tr>
-            <td colSpan={3}>Sem Recados</td>
+            <td colSpan={3}>There's no notes yet!</td>
           </tr>
         )}
       </tbody>
