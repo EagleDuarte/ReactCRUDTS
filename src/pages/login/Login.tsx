@@ -84,9 +84,9 @@ function Login() {
           </form>
 
           <div className="text-center">
-            <span className="txt1">Não possui conta? </span>
+            <span className="txt1">Don't have an account yet?</span>
             <a className="txt2" href="/Register">
-              Criar conta
+              Sign Up!
             </a>
           </div>
         </div>

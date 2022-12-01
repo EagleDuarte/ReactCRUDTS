@@ -125,9 +125,9 @@ function Register() {
           </form>
 
           <div className="text-center">
-            <span className="txt1">Já possui uma conta? </span>
+            <span className="txt1">Already have an account? </span>
             <a className="txt2" href="/">
-              Faça seu login!
+              click here!
             </a>
           </div>
         </div>
