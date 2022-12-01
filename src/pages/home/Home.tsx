@@ -2,7 +2,7 @@ import "./home.css";
 
 import React, { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 import { Note, User, UserData } from "../../data/Interfaces";
 import EditNoteForm from "./forms/EditNoteForm";
@@ -91,44 +91,47 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Bem vindo a lista de usuários</h1>
-      <div>
-        <Button
-          onClick={() => {
-            localStorage.removeItem("loggedUser");
-            navigate("/");
-          }}
-        >
-          Sair
-        </Button>
-      </div>
-      <div className="flex-row">
-        <div className="flex-large">
-          {editing ? (
-            <Fragment>
-              <EditNoteForm
-                editing={editing}
-                editNote={editNote}
-                setEditing={setEditing}
-                currentUser={getLoggedUser}
-              />
-            </Fragment>
-          ) : (
-            <Fragment>
-              <AddNoteForm addNote={addNote} />
-            </Fragment>
-          )}
+    <div className="text-center">
+      <header>
+        <h1>Bem vindo a lista de usuários</h1>
+      </header>
+      <main>
+        <div className="container">
+          <div className="flex-large">
+            {editing ? (
+              <Fragment>
+                <EditNoteForm
+                  editing={editing}
+                  editNote={editNote}
+                  setEditing={setEditing}
+                  currentUser={getLoggedUser}
+                />
+              </Fragment>
+            ) : (
+              <Fragment>
+                <AddNoteForm addNote={addNote} />
+              </Fragment>
+            )}
+          </div>
+          <div className="flex-large">
+            <NoteTable
+              deleteNote={deleteNote}
+              setEditing={setEditing}
+              notes={getUser.notes}
+              editNote={editNote}
+            />
+            <Button
+              className="button style"
+              onClick={() => {
+                localStorage.removeItem("loggedUser");
+                navigate("/");
+              }}
+            >
+              Sair
+            </Button>
+          </div>
         </div>
-        <div className="flex-large">
-          <NoteTable
-            deleteNote={deleteNote}
-            setEditing={setEditing}
-            notes={getUser.notes}
-            editNote={editNote}
-          />
-        </div>
-      </div>
+      </main>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import "./form-style.css";
 
 import React, { useState } from "react";
 import { Note } from "../../../data/Interfaces";
+import { Button, TextField } from "@mui/material";
 
 const AddNoteForm = (props: any) => {
   const model = { id: 0, title: "", description: "" } as Note;
@@ -35,7 +36,7 @@ const AddNoteForm = (props: any) => {
         value={note.description}
         onChange={handleInputChange}
       />
-      <button>Adicionar</button>
+      <button className="button style">Adicionar</button>
     </form>
   );
 };

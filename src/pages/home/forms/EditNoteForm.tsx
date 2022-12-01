@@ -2,6 +2,7 @@ import "./form-style.css";
 
 import React, { useEffect, useState } from "react";
 import { Note } from "../../../data/Interfaces";
+import { Button, TextField } from "@mui/material";
 
 const EditNoteForm = (props: any) => {
   const [user, setUser] = useState(props.currentUser);
@@ -21,37 +22,41 @@ const EditNoteForm = (props: any) => {
   };
 
   return (
-    <form
-      onSubmit={(event) => {
-        event.preventDefault();
+    <main>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
 
-        if (props.editing) {
-          props.editNote(note);
-        }
-      }}
-    >
-      <label>Detalhamento</label>
-      <input
-        type="text"
-        name="title"
-        value={note.title}
-        onChange={handleInputChange}
-      />
-      <label>Descrição</label>
-      <input
-        type="text"
-        name="description"
-        value={note.description}
-        onChange={handleInputChange}
-      />
-      <button>Atualizar</button>
-      <button
-        onClick={() => props.setEditing(false)}
-        className="button muted-button"
+          if (props.editing) {
+            props.editNote(note);
+          }
+        }}
       >
-        Cancelar
-      </button>
-    </form>
+        <table>
+          <label>Detalhamento</label>
+          <input
+            type="text"
+            name="title"
+            value={note.title}
+            onChange={handleInputChange}
+          />
+          <label>Descrição</label>
+          <input
+            type="text"
+            name="description"
+            value={note.description}
+            onChange={handleInputChange}
+          />
+        </table>
+        <button className="button style">Atualizar</button>
+        <button
+          className="button style"
+          onClick={() => props.setEditing(false)}
+        >
+          Cancelar
+        </button>
+      </form>
+    </main>
   );
 };
 
