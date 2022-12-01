@@ -69,13 +69,13 @@ function Login() {
             <TextField
               name="email"
               type="text"
-              placeholder="Digite seu e-mail"
+              placeholder="Your E-mail"
               className="wrap-input"
             />
             <TextField
               name="password"
               type="password"
-              placeholder="Digite sua senha"
+              placeholder="Your Password"
               className="wrap-input"
             />
             <button type="submit" className="login-form-btn">

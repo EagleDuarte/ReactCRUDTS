@@ -53,6 +53,7 @@ body, html {
   position: relative;
   border-bottom: 2px solid #adadad;
   margin-bottom: 37px;
+  background-color: #fff;
 }
 
 .input {
@@ -66,6 +67,7 @@ body, html {
   background-color: transparent;
   padding: 0 5px;
   font-family: Nunito, sans-serif;
+  background-color: #fff;
 }
 
 .focus-input {
@@ -78,6 +80,7 @@ body, html {
   pointer-events: none;
   color: #adadad;
   font-family: Nunito, sans-serif;
+  background-color: #fff;
 }
 
 .focus-input::before {

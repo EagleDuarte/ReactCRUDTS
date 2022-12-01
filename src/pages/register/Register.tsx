@@ -93,30 +93,30 @@ function Register() {
       <div className="container-login">
         <div className="wrap-login">
           <form className="login-form" onSubmit={onSubmit}>
-            <span className="login-form-title">Create your account now! </span>
+            <span className="login-form-title">Create your account now!</span>
 
             <TextField
               name="name"
               type="text"
-              placeholder="Digite seu nome"
+              placeholder="Your Name"
               className="wrap-input"
             />
             <TextField
               name="email"
               type="email"
-              placeholder="Digite seu e-mail"
+              placeholder="Your E-mail"
               className="wrap-input"
             />
             <TextField
               name="password"
               type="password"
-              placeholder="Digite sua senha"
+              placeholder="Your Password"
               className="wrap-input"
             />
             <TextField
               name="repassword"
               type="password"
-              placeholder="Digite sua senha"
+              placeholder="Repeat Your Password"
               className="wrap-input"
             />
             <button type="submit" className="login-form-btn">
