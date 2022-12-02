@@ -64,7 +64,9 @@ function Login() {
       <div className="container-login">
         <div className="wrap-login">
           <form className="login-form" onSubmit={onSubmit}>
-            <span className="login-form-title">Welcome to your NoteList! </span>
+            <span className="login-form-title">
+              Join to have your own note list.
+            </span>
 
             <TextField
               name="email"
